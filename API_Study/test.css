@@ -1,0 +1,31 @@
+body {
+    width: 800px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.15;
+}
+
+a:hover {
+    color: rgb(191, 157, 209);
+}
+
+span {
+    display: inline-block;
+    align-items: center;
+    margin-top: 50px;
+}
+
+img {
+    width: 16%;
+}
