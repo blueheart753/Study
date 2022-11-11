@@ -15,10 +15,10 @@ $(document).ready(function () {
             console.log(msg);
             for (var i = 0; i < 10; i++){
                 $("span").append("<h3><a href='"+ msg.documents[i].url +"'>" + msg.documents[i].title + "</a></h3>");
-                $("span").append("<img src='" + msg.documents[i].thumbnail + "'/>");
-                $("span").append("<strong>저자:</strong> " + msg.documents[i].authors);
-                $("span").append("<strong>출판사:</strong> " + msg.documents[i].publisher);
-                $("span").append("<span>상태:</span>"+msg.documents[i].status);
+                $("span").append("<img src='" + msg.documents[i].thumbnail + "'>");
+                // $("span").append("<strong>저자:</strong> " + msg.documents[i].authors);
+                // $("span").append("<strong>출판사:</strong> " + msg.documents[i].publisher);
+                // $("span").append("<span>상태:</span>"+msg.documents[i].status);
             };
         });
     })
@@ -38,9 +38,9 @@ $(document).ready(function () {
                 for (var i = 0; i < 10; i++){
                     $("span").append("<h3><a href='"+ msg.documents[i].url +"'>" + msg.documents[i].title + "</a></h3>");
                     $("span").append("<img src='" + msg.documents[i].thumbnail + "'/>");
-                    $("span").append("<strong>저자:</strong> " + msg.documents[i].authors);
-                    $("span").append("<strong>출판사:</strong> " + msg.documents[i].publisher);
-                    $("span").append("<span>상태:</span>"+msg.documents[i].status);
+                    // $("span").append("<strong>저자:</strong> " + msg.documents[i].authors);
+                    // $("span").append("<strong>출판사:</strong> " + msg.documents[i].publisher);
+                    // $("span").append("<span>상태:</span>"+msg.documents[i].status);
 
                 }
             });
