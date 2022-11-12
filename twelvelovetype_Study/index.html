@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,24 +12,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/qna.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/result.css">
+    <title>12간지로 알아보는 연애유형</title>
 </head>
+
 <body>
     <div class="container">
-        <section id="main" class="pb-5 px-3">
+        <section id="main" class="pb-3 px-1">
             <h1 class="pt-5">십이간지로 알아보는 연애유형</h1>
             <div class="col-6 mx-auto">
-                <img src="./images/main.png" alt="mainImage" class="img-fluid col-lg-6 col-md-8 col-sm-10">
+                <img src="./images/main.png" alt="mainImage" class="img-fluid col-lg-6 col-md-12 col-sm-1 mainimg">
             </div>
             <p>
                 나만의 MBTI 사이트 입니다. <br>
                 아래 시작하기 버튼을 눌러 시작해주세요.
             </p>
-            <button type="button" class="btn btn-outline-danger mt-3">시작하기</button>
+            <button type="button" class="btn btn-outline-danger mt-3" onclick="js:begain()">시작하기</button>
         </section>
         <section id="qna">
+            <div class="status mx-auto mt-5">
+                <div class="statusBar">
+
+                </div>
+            </div>
+            <div class="qBox my-5 py-3 mx-auto">
+            </div>
+            <div class="answerBox">
+            </div>
         </section>
-        <seaction id="result"></seaction>
+        <seaction id="result">
+            <h1 class="pt-5">당신의 결과는?</h1>
+            <div id="resultIMG" class="col-6 mx-auto">
+                <div class="resultname">
+
+                </div>
+                <div id="resultImg" class="col-lg-6 col-md-8 col-sm-12 col- mx-auto">
+
+                </div>
+                <div class="resultdesc">
+
+                </div>
+                <button type="button">처음으로</button>
+            </div>
+        </seaction>
+        <script src="./Js/data.js"></script>
+        <script src="./Js/start.js" charset="utf-8"></script>
     </div>
 </body>
+
 </html>
