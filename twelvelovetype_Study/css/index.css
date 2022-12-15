@@ -17,6 +17,10 @@
     font-size: 24px;
 }
 
+.btn {
+    background: #ed66c7;
+}
+
 @media (min-width: 1200px) {
     * {
         margin: 0;
@@ -41,8 +45,14 @@
     }
 
     .btn {
+        background: #ffcef1;
         width: 20%;
         height: 20%;
         font-size: 36px;
+    }
+
+    .btn:hover,.btn:focus {
+        background: #ff9be3;
+        color: #fff;
     }
 }
