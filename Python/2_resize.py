@@ -19,7 +19,7 @@ start_time = time.time()
 directory = sys.argv[1]
 
 # 몇 퍼센트 비율로 사이즈를 변경할 것인지 입력받습니다.
-percent = 200,500
+percent = float(sys.argv[2])/100
 
 # 결과물을 저장할 폴더를 생성합니다.
 out_dir ="resized_image"
@@ -48,7 +48,7 @@ for filename in input_files:
     Ydim *= percent
 
     # 이미지 사이즈를 변경합니다.
-    image = Xdim,Ydim
+    image = image.resize((int(Xdim),int(Ydim)))
 
     # 변경된 이미지를 저장합니다.
     image.save(out_dir + "/" + filename)
