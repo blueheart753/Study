@@ -59,18 +59,18 @@ for filename in input_files:
         # 로고의 y축 길이는 비례식으로 계산합니다.
         # new_logo_y : logo_y = new_logo_x : logo_x
         # 간단합니다. 초등학교때 다들 배웠습니다.
-        new_logo_y = #???
+        new_logo_y = int((logo_y*new_logo_x)/logo_x)
     # 로고의 y축 길이가 이미지에 비해 긴 경우 반대로 합니다.
     else:
         new_logo_y = int(Ydim / 5)
-        new_logo_x = #???
+        new_logo_x = int((logo_x*new_logo_y)/logo_y)
 
     # 이미지 크기에 맞게 축소/확대된 로고입니다.
     resized_logo = logo.resize((new_logo_x, new_logo_y))
 
     # 입력받은 사진에 로고를 삽입합니다. 적당한 위치에 말이죠.
     # 대충 여백을 2%정도 주면 적당하겠죠? 이건 여러분의 취향에 달려 있습니다.
-    image.paste(resized_logo, #???
+    image.paste(resized_logo,(new_logo_x,new_logo_y),resized_logo)
 
     # 변경된 이미지를 저장합니다.
     image.save(out_dir + "/" + filename)
